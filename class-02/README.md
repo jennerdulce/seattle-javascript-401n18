@@ -59,6 +59,7 @@ Express Server Mechanics: Routing, Middleware, and Approaches to Testing
 Middleware runs your code, and then runs the `next()` middleware in the series.
 
 ```javascript
+// within myLogger module
 function myLogger(req,res,next) {
   console.log(req.method);
   next(); // runs the next middleware in line
